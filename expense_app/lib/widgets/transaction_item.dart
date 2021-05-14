@@ -5,11 +5,10 @@ import '../models/transaction.dart';
 
 class TransactionItem extends StatelessWidget {
   const TransactionItem({
-    Key key,
     @required this.transaction,
     @required this.mediaQuery,
     @required this.deleteTransaction,
-  }) : super(key: key);
+  });
 
   final Transaction transaction;
   final MediaQueryData mediaQuery;
@@ -18,6 +17,7 @@ class TransactionItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      key: key,
       margin: EdgeInsets.symmetric(vertical: 8, horizontal: 5),
       child: ListTile(
         leading: CircleAvatar(
