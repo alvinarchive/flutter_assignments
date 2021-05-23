@@ -9,7 +9,7 @@ class CartItem {
 
   CartItem(
       {@required this.id,
-      @required this.productId,
+      this.productId,
       @required this.title,
       @required this.quantity,
       @required this.price});
